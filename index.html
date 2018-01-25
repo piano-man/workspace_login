@@ -24,8 +24,8 @@
             window.FB.AppEvents.logPageView();
             window.FB.getLoginStatus(function (response) {
                 console.log(response.status);
-                //console.log(response.authResponse['userID']);
-                //statusChangeCallback(response);
+                console.log(response.authResponse['userID']);
+                statusChangeCallback(response);
 
             });
 
